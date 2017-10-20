@@ -8,7 +8,7 @@
     "build": "ng build -prod",
     "postbuild": "npm run deploy",
     "predeploy": "rimraf ../resources/static/admin && mkdirp ../resources/static/admin",
-    "deploy": "",
+    "deploy": "cp dist/** ../resources/static/admin/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
